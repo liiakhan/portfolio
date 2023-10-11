@@ -1,0 +1,96 @@
+
+/* .header {
+    margin-top: 32px;
+    margin-right: 96px;
+    margin-left: 96px;
+    margin-bottom: 96px;
+} */
+
+header {
+display: flex;
+flex-direction: column;
+}
+
+@font-face {
+    font-family: 'CustomFont';
+    src: url('gt-america-trial-cufonfonts/GT-America-Expanded-Regular-Trial.otf') format('woff');
+    /* You can include more formats here if needed */
+  }
+
+  .logo {
+    padding: 20.5px;
+    margin-top: 32px;
+    margin-bottom: 24px;
+    font-family: 'Customfont';
+    font-size: 20px;
+    color: #ffffff;
+    margin-left: 96px;
+    margin-right: auto;
+  }
+
+
+  
+  
+  .icon {
+    width: 64px;
+    margin-top: 32px;
+    margin-bottom: 24px;
+    margin-right: 96px;
+    float: right;
+    margin-left: auto;
+  }
+
+  body {
+    background-color: #070706;
+    margin: 0;
+    overflow: hidden; /* Hide any overflowing video */
+
+  }
+
+  .menuitem{
+    color: #070706;
+  }
+
+  .video-container2 {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+ 
+}
+
+video {
+    /* min-width: 100%; */
+    width: 100%;
+    object-fit: cover;
+}
+
+.content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 50%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.video-container {
+  position: absolute;
+  width: 50%;
+}
+
+.videogradient {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: linear-gradient(339deg, #000000 26%, #00000000 48%), linear-gradient(90deg, #17161c00 37%, #000000 100%), linear-gradient(0deg, #17161c99 0%, #17161c99 100%);
+  /* background: linear-gradient(339deg, #22232E 26%, rgba(34, 35, 46, 0) 48%), linear-gradient(90deg, rgba(34, 35, 46, 0) 37%, #22232E 100%), linear-gradient(0deg, rgba(34, 35, 46, 0.60) 0%, rgba(34, 35, 46, 0.60) 100%); */
+}
+
+.smallvideo {
+  height: 100px;
+  position: relative;
+  top: 700px;
+}
