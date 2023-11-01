@@ -1,96 +1,181 @@
-
-/* .header {
-    margin-top: 32px;
-    margin-right: 96px;
-    margin-left: 96px;
-    margin-bottom: 96px;
-} */
-
-header {
-display: flex;
-flex-direction: column;
-}
-
-@font-face {
-    font-family: 'CustomFont';
-    src: url('gt-america-trial-cufonfonts/GT-America-Expanded-Regular-Trial.otf') format('woff');
-    /* You can include more formats here if needed */
-  }
-
-  .logo {
-    padding: 20.5px;
-    margin-top: 32px;
-    margin-bottom: 24px;
-    font-family: 'Customfont';
-    font-size: 20px;
-    color: #ffffff;
-    margin-left: 96px;
-    margin-right: auto;
-  }
-
-
-  
-  
-  .icon {
-    width: 64px;
-    margin-top: 32px;
-    margin-bottom: 24px;
-    margin-right: 96px;
-    float: right;
-    margin-left: auto;
-  }
-
-  body {
-    background-color: #070706;
+* {
     margin: 0;
-    overflow: hidden; /* Hide any overflowing video */
-
-  }
-
-  .menuitem{
-    color: #070706;
-  }
-
-  .video-container2 {
-    position: relative;
-    width: 100%;
-    height: 100vh;
- 
 }
 
-video {
-    /* min-width: 100%; */
-    width: 100%;
-    object-fit: cover;
+#video-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
 }
 
 .content {
     position: absolute;
     top: 0;
     left: 0;
-    right: 50%;
     width: 100%;
     height: 100%;
     display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(339deg, #000000 26%, #00000000 48%), linear-gradient(90deg, #17161c00 37%, #000000 100%), linear-gradient(0deg, #17161c99 0%, #17161c99 100%);
 }
 
-.video-container {
-  position: absolute;
-  width: 50%;
+
+#headerLine {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    /* align-items: center; */
+    padding-top: 32px;
+    padding-bottom: 24px;
+    padding-left: 86px;
+    padding-right: 96px;
 }
 
-.videogradient {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  background: linear-gradient(339deg, #000000 26%, #00000000 48%), linear-gradient(90deg, #17161c00 37%, #000000 100%), linear-gradient(0deg, #17161c99 0%, #17161c99 100%);
-  /* background: linear-gradient(339deg, #22232E 26%, rgba(34, 35, 46, 0) 48%), linear-gradient(90deg, rgba(34, 35, 46, 0) 37%, #22232E 100%), linear-gradient(0deg, rgba(34, 35, 46, 0.60) 0%, rgba(34, 35, 46, 0.60) 100%); */
+#logo {
+    font-family: Michroma;
+    color: #fff;
+    text-align: left;
 }
 
-.smallvideo {
-  height: 100px;
-  position: relative;
-  top: 700px;
+
+p {
+    font-family: 'Open Sans', sans-serif;    
+    text-align: right;
+    color: #D8D8D8;
+    
+}
+
+#borderright {
+    padding-right: 24px;
+    margin-left: auto;
+    border-right: 4px solid #00FF11;
+    width: 453px;
+}
+
+h3 {
+    color: #00FF11;
+    font-family: 'Open Sans', sans-serif;
+    text-align: left;
+    font-size: 16px;
+}
+
+#videoblock {
+    width: 415px;
+    height: 234px;
+    overflow: hidden;
+    border: 14px solid #00FF11;
+    margin-right: auto;
+
+}
+
+#video-small {
+    width: 1000%;
+
+}
+
+#pagecontent {
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    padding: 128px;
+    /* margin-right: auto; */
+    align-items: center;
+    /* justify-content: center; */
+    gap: auto;
+    
+}
+
+h1 {
+    font-family: Michroma;
+    font-size: 48px;
+    line-height: 93%;
+    text-align: right;
+
+}
+
+
+
+#logopage {
+    margin-right: auto;
+}
+
+#textblock {
+    display: flex;
+    flex-direction: column;
+    width: 590px;
+    gap: 24px;
+    
+   
+}
+
+div.content {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+nav.open {
+    right: 0;
+    top: 0;
+}
+
+
+nav {
+    background: #00FF11;
+    height: 120px;
+    width: 798px;
+    position: fixed;
+    right: -1280px;
+    top: -120px;
+    transition: 0.8s;
+    display: grid;
+    gap: 32px;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    /* grid-auto-rows: auto; */
+    padding-left: 32px;
+    padding-right: 64px;
+    gap: 64px;
+}
+
+button {
+    background: 0;
+    /* box-shadow: 0; */
+    border: 0;
+    /* margin-left: auto; */
+    padding: 0;
+    width: fit-content;
+    margin: 0;
+}
+
+#navitems {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 32px;
+    width: 542px;
+    margin-right: 96px;
+    /* margin-right: auto; */
+
+}
+
+nav a {
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: auto; */
+    font-size: 15px;
+    margin-top: 14px;
+    margin-bottom: 14px;
+    margin-left: 10px;
+    margin-right: 10px;
+    gap: 32px;
+    width: 128px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }

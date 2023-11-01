@@ -1,45 +1,104 @@
 <!DOCTYPE html>
-<title>webportflio</title>
+<title>webportfliosecondv</title>
 <link rel="stylesheet" href="style.css">
 
-<header>
-    <div class="video-container2">
-        <div class="video-container">
-            <video autoplay loop muted>
-                <source src="https://s3-figma-videos-production-sig.figma.com/video/1151803444282609213/TEAM/b142/da6e/-7766-486f-998a-0a3fd91e03a3?Expires=1696809600&Signature=oz7EvAdvB7Jne0ApztAlrNI-3f~tiwXaH-FPRJys7ELHQP3BQPaEvrIXqiT4UCwExo5QHLvKvIHGP4lYOY-wU0yb6UHKEjTX5YeASbA3lm7nxUcz5p34Ke24Q58wPmVNu~yENdhYlKfhsVCvladYiZDHEIVB4ccXorHwAaqW2BCAMEIT0PK2GmUFJhhfDhbq9EtEx00CMaYb~W9xvwZd8tYXkmxpJe4fNshmWqnOPq1WCOPNCldHdyZS35o9hhb1S9rwnlbhcTzvDy9KDs6hwEckM-F2NCAJJfuuzpLjnbt6gpNRFPqWEMXnf2XWx47EjpSpfAc28vK8aClqz2pojg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" type="video/mp4">
-                <!-- Add more source elements for different video formats if needed -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+
+
+
+
+
+<head>
+    <title>Video Background</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <!-- video background -->
+
+
+    <video autoplay muted loop id="video-bg">
+        <source src="media/IMG_5527.mp4" type="video/mp4">
+    </video>
+    
+    
+    
+    
+    <div class="content">
+
+    <!-- Your website content goes here -->
+
+
+
+
+    <!-- Logo and menu icon -->
+    <div id="headerLine">
+        <div id="logopage">
+            <p id="logo">
+                Liia Khananova
+            </p>
+            <h3 id="pagetitle">
+                <em>Home</em>
+            </h3>
+
+        </div>
+
+        <button onclick="openNav()">
+        <img src="media/icon.svg" class="icon">
+        </button>
+    </div>
+
+
+    <!-- Block of small video and explanatory block -->
+    <!-- Video block -->
+    <section id="pagecontent">
+
+
+        <section id="videoblock">
+            <video autoplay muted loop id="video-small">
+                <source src="media/IMG_5527.mp4" type="video/mp4">
             </video>
-            <div class="videogradient"></div>
-        </div>
-        <div class="content">
-            <p class="logo">Liia Khananova</p>
-            <a href="">
-                <img src="icon.svg" class="icon">
-            </a>
-        </div>
+        </section>
+
+        <!-- explanatory block -->
+        <section id="textblock">
+            <h1>
+                Liia Khananova
+            </h1>
+
+            <p id="borderright">
+                I am a Graphic Designer passionate about 
+                <br><em>creating</em> and <em>recreating</em> 
+            </p>
+
+        </section>
+    </section>
+ </div>
+
+
+ <nav id="nav">
+    <div id="navitems">
+      <a>Home</a>
+      <a>About</a>
+      <a>Contact</a>
     </div>
 
-
-    <div class="smallvideo">
-         <video autoplay loop muted>
-                <source src="https://s3-figma-videos-production-sig.figma.com/video/1151803444282609213/TEAM/b142/da6e/-7766-486f-998a-0a3fd91e03a3?Expires=1696809600&Signature=oz7EvAdvB7Jne0ApztAlrNI-3f~tiwXaH-FPRJys7ELHQP3BQPaEvrIXqiT4UCwExo5QHLvKvIHGP4lYOY-wU0yb6UHKEjTX5YeASbA3lm7nxUcz5p34Ke24Q58wPmVNu~yENdhYlKfhsVCvladYiZDHEIVB4ccXorHwAaqW2BCAMEIT0PK2GmUFJhhfDhbq9EtEx00CMaYb~W9xvwZd8tYXkmxpJe4fNshmWqnOPq1WCOPNCldHdyZS35o9hhb1S9rwnlbhcTzvDy9KDs6hwEckM-F2NCAJJfuuzpLjnbt6gpNRFPqWEMXnf2XWx47EjpSpfAc28vK8aClqz2pojg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" type="video/mp4">
-                <!-- Add more source elements for different video formats if needed -->
-        </video>
-     </div>
-</header>
+    <button onclick="openNav()">
+        <img src="media/iconup.svg" class="icon">
+    </button>
+    
+  </nav>
 
 
-
-
-<!--<div>
-<p class="logo">Liia Khananova</p>
-<a href=""><img src="icon.svg" class="icon"></a>
-</div>
-
-
-<div id="overlay" class="overlay">
-    <div class="overlay-content">
-      <span class="close" id="closeOverlay">&times;</span>
-      <p>This is the overlay content.</p>
-    </div>
-  </div>
+  <script src="function.js"></script>
+</body>
+</html>
